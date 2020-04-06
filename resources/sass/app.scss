@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+#app .sidebar {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: $teal;
+
+    &__inner {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 150px);
+    }
+
+    &__branding {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 150px;
+        border-bottom: 1px solid #fff;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+.logout {
+    display: block;
+    padding: 10px 5px;
+}
